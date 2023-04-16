@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
+    <title>Notices</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
@@ -23,17 +23,15 @@
               <a class="nav-link" href="/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contactus.html">Contact Us </a>
+              <a class="nav-link" href="/form.html">Contact Us </a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Topic
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/event.html">Events</a>
-                <a class="dropdown-item" href="#">Notices</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">support</a>
+                <a class="dropdown-item" href="event.html">Events</a>
+                <a class="dropdown-item" href="/noice.html">Notices</a>
               </div>
             </li>
             
@@ -45,6 +43,8 @@
           <div class="mx-2">
             <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
             <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">Sign in</button>
+            <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal" style="display: none;" id="b4">Logout</button>
+            
           </div>
         </div>
         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="white" class="bi bi-bell" viewBox="0 0 16 16">
@@ -88,37 +88,29 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    <h1 style="display: grid; justify-content: center;">Upcoming Events</h1>
+       <h1 style="display: grid; justify-content: center;">Notices</h1>
       <hr>
     <div class="card">
         <div class="card-header">
-          Featured
+          Notice 2
         </div>
         <div class="card-body">
-          <h5 class="card-title">CodeX</h5>
-          <p class="card-text">We have new Event for you.</p>
-          <a href="" class="btn btn-primary" onclick="showalert()">Register</a>
+          <h5 class="card-title">Codex</h5>
+          <p class="card-text">We are recruting.</p>
+          <a href="" target="_blank" class="btn btn-primary">Apply Now</a>
         </div>
       </div>
       <br>
 
       <div class="card">
         <div class="card-header">
-          Featured
+          Notice 2
         </div>
         <div class="card-body">
-          <h5 class="card-title">CSI</h5>
-          <p class="card-text">We have new Event for you.</p>
-          <a href="" class="btn btn-primary" data-toggle="modal" data-target="#register-modal" onclick="showalert()">Register</a>
+          <h5 class="card-title">Team Raw</h5>
+          <p class="card-text">We are recruting.</p>
+          <a href="" target="_blank" class="btn btn-primary" data-toggle="modal" data-target="#register-modal">Apply Now</a>
         </div>
       </div>
-
-      <script>
-        function showalert(){
-          alert("You have registered successfully!");
-         
-        }
-        
-      </script>
 </body>
 </html>
